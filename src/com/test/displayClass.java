@@ -3,7 +3,16 @@ package com.test;
 public class displayClass {
 
 	public static void main(String[] args) {
-		System.out.println("Hi there this is just a display class!!!");
-		System.out.println("checking conflicts");
+
+		String s = "overrideBillingPreference|bypassCaptureConsumerID";
+
+		String str = new String("Java String Methods");
+
+
+		System.out.println(s.matches("overrideBillingPreference(*)"));
+
+		System.out.println(str.matches("(.*)String(.*)"));
+
+
 	}
 }

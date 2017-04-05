@@ -2,9 +2,9 @@ package com.test;
 
 public class MagicSquare {
 	public static void main(String[] args) {
-		int n = 7;
+		int n = 3;
 		int[][] square = new int[n][n];
-		//		top-right as an origin
+//		top-right as an origin
 
 		int x=n-1,y=n/2;
 		int value = n*n;

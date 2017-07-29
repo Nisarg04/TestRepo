@@ -13,6 +13,7 @@ public class ComparableDemo{
 		Employee e3 = new Employee(5, "Lisa", 35, 5000);
 		Employee e4 = new Employee(1, "Pankaj", 32, 50000);
 		
+		System.out.println("--List--");  
 		List<Employee> empList = Arrays.asList(e1,e2,e3,e4);
 		System.out.println("Before Sorting : " + empList.toString());
 		Collections.sort(empList);

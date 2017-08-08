@@ -27,6 +27,20 @@ public class Barcodes {
         Document document = new Document();
         PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(dest));
         document.open();
+        
+        
+        /*BarcodeEAN codeEAN = new BarcodeEAN();
+        codeEAN.setCodeType(codeEAN.EAN13);
+        codeEAN.setCode("9780201615883");
+        Image imageEAN = codeEAN.createImageWithBarcode(cb, null, null);*/
+        
+        
+        /*
+         
+        byte[] mergedDoc = outStream.toByteArray(); 
+        String encoded = new String(java.util.Base64.getEncoder().encode(mergedDoc));*/
+        
+        
         PdfPTable table = new PdfPTable(4);
         table.setWidthPercentage(100);
         for (int i = 0; i < 12; i++) {

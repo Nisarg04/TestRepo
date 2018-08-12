@@ -3,15 +3,15 @@ package com.test;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-class Test extends Thread {
+class MapDemo extends Thread {
 
 	public static void main(String[] args) throws InterruptedException {
-		Map<Key, Integer> map = new LinkedHashMap<>();
-		Key k1 = new Key("Vishal",1);
-		Key k2 = new Key("Vishal",2);
-		Key k3 = new Key("Ramesh",3);
-		Key k4 = new Key("Suresh",4);
-		Key k5 = new Key("Wuresh",5);
+		Map<SampleKey, Integer> map = new LinkedHashMap<>();
+		SampleKey k1 = new SampleKey("Vishal",1);
+		SampleKey k2 = new SampleKey("Vishal",2);
+		SampleKey k3 = new SampleKey("Ramesh",3);
+		SampleKey k4 = new SampleKey("Suresh",4);
+		SampleKey k5 = new SampleKey("Wuresh",5);
 
 		map.put(k1,25);
 		map.put(k3,23);
@@ -30,11 +30,11 @@ class Test extends Thread {
 	}	
 }
 
-class Key
+class SampleKey
 {
 	String key;
 	int d;
-	Key(String key, int d)
+	SampleKey(String key, int d)
 	{
 		this.key = key;
 		this.d = d;
@@ -52,7 +52,7 @@ class Key
 
 	@Override
 	public boolean equals(Object obj) {
-		Key other = (Key) obj;
+		SampleKey other = (SampleKey) obj;
 		
 		return this.key.equals(other.key);
 	}

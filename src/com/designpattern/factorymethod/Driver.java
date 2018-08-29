@@ -4,6 +4,8 @@ package com.designpattern.factorymethod;
  * Class with main method in it, 
  * calls the static factory method of the factory class
  * 
+ * Get an instance of Sedan, Mini or Luxury 
+ * 
  * @author nisargkumar.s.patil
  */
 public class Driver {

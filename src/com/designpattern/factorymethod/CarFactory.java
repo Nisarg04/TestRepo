@@ -1,13 +1,13 @@
 package com.designpattern.factorymethod;
 
 /**
- * @author nisargkumar.s.patil
  *	Factory class that returns instance of any sub-class of Car
  *
  * New instance is created based on the enum type that is passed
  * This parameter is just to distinguish between the subclasses
  * Basic version can have String as this parameter
  * 
+ * @author nisargkumar.s.patil
  */
 public class CarFactory {
 

@@ -1,4 +1,4 @@
-package com.designpattern.factorymethod;
+package com.designpattern.factorydesign;
 
 /**
  *	Factory class that returns instance of any sub-class of Car

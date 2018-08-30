@@ -1,4 +1,4 @@
-package com.designpattern.factorymethod;
+package com.designpattern.factorydesign;
 
 public class Sedan extends Car {
 

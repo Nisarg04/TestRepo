@@ -1,4 +1,4 @@
-package com.designpattern.factorymethod;
+package com.designpattern.factorydesign;
 
 /**
  * Class with main method in it, 

@@ -1,4 +1,4 @@
-package com.designpattern.factorydesign;
+package com.designpattern.simplefactory;
 
 /**
  * Super class, for factory method implementation
@@ -31,6 +31,4 @@ public abstract class Car {
 	public void setCarType(CarType carType) {
 		this.carType = carType;
 	}
-
-
 }

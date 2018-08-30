@@ -1,4 +1,4 @@
-package com.designpattern.factorydesign;
+package com.designpattern.simplefactory;
 
 public class Mini extends Car {
 	

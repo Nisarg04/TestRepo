@@ -1,20 +1,26 @@
 package com.designpattern.factorymethod.creator;
 
 import com.designpattern.factorymethod.product.Car;
-import com.designpattern.factorymethod.product.CarType;
 
+/**
+ * This is abstract creator.
+ * getCar() has to be implemented by all its sub-classes
+ * @author nisargkumar.s.patil
+ *
+ */
 public abstract class CarCreator {
+
+	//Factory method
 	public abstract Car getCar();
 
 	public Car createCar() {
-		System.out.println("Creating carCreator...");
-		
-		/*switch(carType) {
-		case LUXURY : return new LuxuryCreator();
-		case MINI : return new MiniCreator();
-		case SEDAN : return new SedanCreator();
-		default : throw new IllegalArgumentException();
-		}*/
-		return getCar(); 
+		//car is an instance returned by any of the subclasses
+		Car car = getCar();
+
+		//perform some other operations on car
+		//performing additional operations is not mandatory
+		car.construct();
+
+		return car; 
 	}
 }

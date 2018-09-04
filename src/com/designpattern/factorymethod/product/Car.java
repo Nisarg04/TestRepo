@@ -4,6 +4,8 @@ package com.designpattern.factorymethod.product;
  * Super class, for factory method implementation
  * this can be an interface or normal concrete class.
  * 
+ * Can also be referred as a Product class
+ * 
  * Main aim is to create an instance of any class that implements/extends 
  * this interface/class, in our case "Sedan, Mini or Luxury"
  * 

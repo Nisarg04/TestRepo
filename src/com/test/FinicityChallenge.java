@@ -30,7 +30,6 @@ See the examples below:
 
 	public static void main(String[] args) {
 
-		//			System.out.println(eval(args[0]));
 		System.out.println(eval("gaeb7!!!8jeks5!!!tux10"));
 		System.out.println(eval("kem!7!!nej!8ww1!!!!!!5"));
 		System.out.println(eval("7!!!8!!!7!!!8!!!7"));

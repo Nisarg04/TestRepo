@@ -43,7 +43,6 @@ See the examples below:
 		if(countFraction(arg)) {
 			return conditionCheck(arg);
 		} else {
-			
 			return eval(trimmedString(arg));
 		}
 	}
@@ -58,23 +57,45 @@ See the examples below:
 	private static boolean countFraction(String sub) {
 		//return n-1
 		//where, n is no. of digits
-		
 		//returns true if count is 1
-		return false;
+		int count = 0;
+		char[] input = sub.toCharArray();
+		for(int i=0; i<input.length ; i++) {
+			if(Character.isDigit(input[i])) {
+				count++;
+			}
+		}
+		return count==2;
 	}
 
 
 	//filters char and gives only required 
 	//and remove trailing ! as well
 	private static String filterInput(String arg) {
-		String newString = arg;
-		return newString;
+		char[] input = arg.toCharArray();
+		char[] output = new char[input.length];
+		int j=0;
+
+		for(int i=0; i<input.length ; i++) {
+			if(Character.isDigit(input[i]) || '!'==input[i]) {
+				output[j++]=input[i];
+			}
+		}
+		
+		return new String(output);
 	}
 
 
 	private static boolean conditionCheck(String str) {
 		//check if string contain three ! and sum is 15
-		// for first fraction
-		return false;
+		// for passed fraction
+		int count = 0;
+		char[] input = str.toCharArray();
+		for(int i=0; i<input.length ; i++) {
+			if('!' == input[i]) {
+				count++;
+			}
+		}
+		return count==3 && countFraction(str);
 	}
 }

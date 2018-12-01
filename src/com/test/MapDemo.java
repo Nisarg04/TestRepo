@@ -42,7 +42,7 @@ class SampleKey
 
 	@Override
 	public int hashCode() {
-		return (int)key.charAt(0);
+		return (int)key.charAt(0) * 13;
 	}
 
 	@Override

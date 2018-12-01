@@ -1,6 +1,6 @@
 package com.test;
 
-public class FinicityChallengeRecurssive {
+public class FinicityChallengeRecursive {
 
 	/*	
 Coding Challenge
@@ -31,8 +31,8 @@ See the examples below:
 	public static void main(String[] args) {
 
 //		System.out.println(eval("gaeb7!!!8jeks5!!!tux10"));
-//		System.out.println(eval("kem!7!!nej!8ww1!!!!!!5"));
-		System.out.println(eval("7!!!8!!!7!!!8!!!7"));
+		System.out.println(eval(filterInput("kem!7!!nej!8ww1!!!!!!5")));
+//		System.out.println(eval(filterInput("7!!!8!!!7!!!8!!!7")));
 //		System.out.println(eval("5!!aaaaaaaaaaaaa!10!5"));
 //		System.out.println(eval("Aa6!9"));
 
@@ -49,15 +49,24 @@ See the examples below:
 
 	//String after removing first fraction
 	private static String trimmedString(String arg) {
-		String newString = arg;
-		return newString;
+		int index=-1;
+		
+		char[] input = arg.toCharArray();
+		for(int i=1; i<input.length ; i++) {
+			if(Character.isDigit(input[i])) {
+				index=i;
+				break;
+			}
+		}
+		
+		return arg.substring(index);
 	}
 
-
-	private static boolean countFraction(String sub) {
-		//return n-1
-		//where, n is no. of digits
-		//returns true if count is 1
+	//return n-1
+	//where, n is no. of digits
+	//returns true if count is 1
+	private static boolean countFraction(String arg) {
+		String sub = arg;
 		int count = 0;
 		char[] input = sub.toCharArray();
 		for(int i=0; i<input.length ; i++) {
@@ -81,7 +90,6 @@ See the examples below:
 				output[j++]=input[i];
 			}
 		}
-		
 		return new String(output);
 	}
 

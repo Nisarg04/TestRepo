@@ -18,6 +18,7 @@ public class Sample {
         Map<String, List<String>> collect = Arrays.stream(inputstr)
         		.collect(Collectors.groupingBy(Object::toString));
         
+        System.out.println("== RESULT ==");
         System.out.println(collect);
         System.out.println(countMap);
 	}

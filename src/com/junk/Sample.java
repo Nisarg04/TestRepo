@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 public class Sample {
 
 	public static void main(String[] args) {
+		System.out.println("Start");
 		String str= "sample program java program the occurences the java program";
         String[] inputstr = str.split(" ");
         
